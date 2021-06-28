@@ -1,13 +1,25 @@
-let num = 266219;
-let mult = 1;
-console.log(typeof(num));
-let res = String(num);
-res = res.split('');
-console.log("массив чисел исходного числа = " + res);
-for (let i = 0; i<res.length; i++){
-    mult = mult * res[i];
+/* part 1   */
+let lang = prompt('Выберите язык');
+    if (lang === 'en'){
+        console.log('Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday');
+    }
+    else{
+        console.log('Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье');
 }
-console.log("умножение чисел = " + mult);
-mult = mult**3;
-console.log("возведение числа в 3 степень = " + mult);
-console.log("первые 2 числа = " + String(mult).slice(0,2));
+
+switch(lang) {
+    case 'en': console.log('Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday');
+    break;
+    case 'ru':console.log('Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье');
+    break;
+}
+
+let array = [];
+array['.ru'] = ['Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье'];
+array['.en'] = ['Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'];
+console.log(array[lang]);
+
+/*  part 2  */
+let namePerson = prompt('Введите имя');
+let person = (namePerson === "Артем") ? "Директор" : (namePerson === "Максим") ? "Преподаватель" : "Студент";
+console.log(person);
