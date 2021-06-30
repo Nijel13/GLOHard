@@ -15,8 +15,8 @@ switch(lang) {
 }
 
 let array = [];
-array['.ru'] = ['Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье'];
-array['.en'] = ['Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'];
+array['ru'] = ['Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье'];
+array['en'] = ['Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'];
 console.log(array[lang]);
 
 /*  part 2  */
